@@ -3,6 +3,7 @@ a {
 }
 .card {
     flex: 0 0 auto;
+    background-color: #212529 !important;
 }
 #particles-js {
     position: absolute;
@@ -20,4 +21,21 @@ footer{
 }
 nav {
     background-color: #7952B3 !important;
+}
+main {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+.btn {
+    background-color: #7952B3 !important;
+}
+.btn-outline-success {
+    border-color: rgb(15, 15, 15) !important; /* Cambia il colore del bordo */
+    color: rgb(16, 16, 16) !important; /* Cambia anche il colore del testo */
+}
+.form-control {
+    border-color: rgb(15, 15, 15) !important; /* Cambia il colore del bordo */
+    color: rgb(16, 16, 16) !important; /* Cambia anche il colore del testo */
 }
