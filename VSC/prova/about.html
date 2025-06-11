@@ -1,51 +1,78 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Titolo pagina -->
-    <title>Davide Policelli | WebSite</title>
-    <!-- Link css -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Link Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Titolo pagina -->
+        <title>Davide Policelli | About</title>
+
+        <!-- Link css -->
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- Link Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
   <body>
+    <!-- Particles.js -->
+    <div id="particles-js"></div>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand">
+    <div class="container-fluid">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        </ul>
+    </div>
+    </nav>
+
+    <!-- div con titolo -->
+    <div id="containerTitleBtn" class="container text-center">
+        <h1 id="TitoloNome">Chi sono</h1>
+    </div>
+
+    <!-- main -->
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5 d-flex justify-content-center">
+                    <div class="card h-100 w-100">
+                        <div class="card-body">
+                            <p class="card-text">Sono uno studente dell'ITIS di Parma, indirizzo Informatica, appassionato di tecnologia e costantemente alla ricerca di nuove sfide. Oltre allo studio, mi dedico con entusiasmo alla palestra, perché credo nell’equilibrio tra mente e corpo.  
+                                <br><br>
+                                Ho acquisito solide competenze in diversi linguaggi di programmazione come <strong>HTML</strong>, <strong>JavaScript</strong>, <strong>Java</strong>, <strong>Python</strong> e <strong>C</strong>.  
+                                <br>
+                                Mi interesso anche di reti informatiche, approfondendo sia la teoria che la pratica nella gestione e configurazione delle reti.  
+                                <br><br>
+                                Sono determinato a crescere ogni giorno, sia come sviluppatore che come persona!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        </nav>
-
-        <!-- div con titolo e bottoni -->
-        <div id="containerTitleBtn" class="container text-center">
-            <h1 id="TitoloNome">Chi sono</h1>
+    </main>
+        
+    <!-- footer -->
+    <footer class="bg-gray-800 text-center text-lg-start">
+        <div class="text-center p-3 text-dark" style="display: flex; align-items: center;">
+            <a id="LinkGitHUB" href="https://github.com/ThisDavide/"><img id="imgGitHUB" src="./img/GitHub-Symbol.png" alt="GitHUB"></a> 
+            <a id="LinkInstragram" href="https://www.instagram.com/"><img id="imgInstagram" src="./img/instagram.png" alt="Instagram"></a>
+            <a id="LinkTelegram" href="https://www.telegram.com/"><img id="imgTelegram" src="./img/Telegram.png" alt="Telegram"></a>
+            <p id="footerText"> &copy; <span id="annoCorrente"></span> Davide Policelli. Tutti i diritti riservati.</p>
         </div>
-
-        <!-- main -->
-        <main>
-            <div class="container">
-            </div>
-        </main>
-
-        <!-- footer -->
-        <footer class="bg-gray-800 text-center text-lg-start">
-            <div class="text-center p-3 text-dark" style="display: flex; align-items: center;">
-                <a id="LinkGitHUB" href="https://github.com/ThisDavide/"><img id="imgGitHUB" src="./img/GitHub-Symbol.png" alt="GitHUB"></a> 
-                <a id="LinkInstragram" href="https://www.instagram.com/"><img id="imgInstagram" src="./img/instagram.png" alt="Instagram"></a>
-                <a id="LinkTelegram" href="https://www.telegram.com/"><img id="imgTelegram" src="./img/Telegram.png" alt="Telegram"></a>
-                <p id="footerText"> &copy; <span id="annoCorrente"></span> Davide Policelli. Tutti i diritti riservati.</p>
-            </div>
-        </footer>
-        <script>document.getElementById("annoCorrente").innerHTML = new Date().getFullYear()</script>
+    </footer>
+    <script>document.getElementById("annoCorrente").innerHTML = new Date().getFullYear()</script>
+    
+    <!-- particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', './particles.json', function() {
+        console.log('particles.js loaded - callback');
+        });
+    </script>
+    </script>
     </body>
 </html>

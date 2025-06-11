@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Titolo pagina -->
-        <title>Davide Policelli | WebSite</title>
+        <title>Davide Policelli | HomePage</title>
         <!-- Link css -->
         <link rel="stylesheet" href="style.css">
         <!-- Link Bootstrap -->
@@ -13,26 +13,25 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
   <body>
-    <!-- Particles.js -->
-    <div id="particles-js"></div>
+        <!-- Particles.js -->
+        <div id="particles-js"></div>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand">
         <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                </li>
+            </li>
             </ul>
-            </div>
         </div>
         </nav>
 
-        <!-- div con titolo e bottoni -->
+        <!-- div con titolo, sottotitolo e bottoni -->
         <div id="containerTitleBtn" class="container text-center">
-            <img id="imgProfilo" src="" alt="Profilo">
+            <img id="imgProfilo" src="./img/Solid_black.png" alt="Profilo">
             <h1 id="TitoloNome">Davide Policelli</h1>
+            <h4 id="subtitle">Programmer - Web Developer</h4>
             <br>
             <button id="AboutBtn"><a id="AboutLink" href="./about.html">About</a></button>
             <button id="ContactBtn"><a id="ContactLink" href="mailto:davide.policelli@gmail.com">Contact me</a></button>
@@ -43,9 +42,9 @@
             <h2 id="languagesH2">Languages</h2>
             <br>
             <img src="./img/Python.png" alt="Python" style="width: 200px;">
-            <img src="./img/html.png" alt="HTML" style="width: 200px;">
+            <img src="./img/html4.png" alt="HTML" style="width: 200px;">
+            <img src="./img/js2.png" alt="js" style="width: 190px;">
             <img src="./img/css.png" alt="css" style="width: 190px;">
-            <img src="./img/JavaScript.png" alt="css" style="width: 210px;">
         </div>
 
         <!-- main con cards -->
@@ -53,31 +52,31 @@
         <main>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-4 mb-4">
+                    <div class="col-12 col-md-4 mb-4 d-flex justify-content-center">
                         <div class="card h-100">
                             <img src="./img/heart.png" class="card-img-top" alt="">
                             <div class="card-body">
                                 <h5 class="card-title">HealUp</h5>
                                 <p class="card-text">HealUp è una piattaforma creata da studenti per promuovere salute e benessere mentale, con risorse e consigli utili per il tuo equilibrio quotidiano.</p>
-                                <a href="https://heal-up.netlify.app/" class="btn btn-primary">Vai al sito</a>
+                                <a href="https://heal-up.netlify.app/" class="btn btn-primary">Go to the site</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+                    <div class="col-12 col-md-4 mb-4 d-flex justify-content-center">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">Snake</h5>
                                 <p class="card-text">Snake in Python.</p>
-                                <a href="" class="btn btn-primary">Vai al sito</a>
+                                <a href="" class="btn btn-primary">Go to the site</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+                    <div class="col-12 col-md-4 mb-4 d-flex justify-content-center">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">Pong</h5>
                                 <p class="card-text">Pong in Python.</p>
-                                <a href="" class="btn btn-primary">Vai al sito</a>
+                                <a href="" class="btn btn-primary">Go to the site</a>
                             </div>
                         </div>
                     </div>
@@ -87,21 +86,21 @@
         
         <!-- footer -->
         <footer class="bg-gray-800 text-center text-lg-start">
-            <div class="text-center p-3 text-dark" style="display: flex; align-items: center;">
+            <div class="text-center p-3 text-dark" style="display: flex; align-items: center;">
                 <a id="LinkGitHUB" href="https://github.com/ThisDavide/"><img id="imgGitHUB" src="./img/GitHub-Symbol.png" alt="GitHUB"></a> 
                 <a id="LinkInstragram" href="https://www.instagram.com/"><img id="imgInstagram" src="./img/instagram.png" alt="Instagram"></a>
-                <a id="LinkTelegram" href="https://www.telegram.com/"><img id="imgTelegram" src="./img/Telegram.png" alt="Telegram"></a>
-                <p id="footerText"> &copy; <span id="annoCorrente"></span> Davide Policelli. Tutti i diritti riservati.</p>
-            </div>
+                <a id="LinkTelegram" href="https://www.telegram.com/"><img id="imgTelegram" src="./img/Telegram.png" alt="Telegram"></a>
+                <p id="footerText"> &copy; <span id="annoCorrente"></span> Davide Policelli. All rights reserved.</p>
+            </div>
         </footer>
         <script>document.getElementById("annoCorrente").innerHTML = new Date().getFullYear()</script>
         
         <!-- particles.js -->
-        <script src="./particles.js-master/particles.js-master/particles.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
         <script>
-            particlesJS.load('particles-js', './particles.js-master/particles.js-master/particles.json', function() {
-            console.log('particles.js loaded');
-        });
+            particlesJS.load('particles-js', './particles.json', function() {
+            console.log('particles.js loaded - callback');
+            });
         </script>
     </body>
 </html>
