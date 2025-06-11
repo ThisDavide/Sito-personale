@@ -3,32 +3,52 @@ a {
 }
 .card {
     flex: 0 0 auto;
-    background-color: #212529 !important;
+    background-color: rgb(56, 56, 56) !important;
+    width: 20rem !important;
+    height: 20rem !important;
+    margin: 5% !important;
+    border-radius: 5% !important;
+}
+.card:hover,
+.card:active {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transform: scale(1.05);
+    background-color: rgb(56, 56, 56) !important;
+    transition: all 0.3s;
+}
+.card {
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.card-title, .card-text {
+    color: #ff8f20 !important;
 }
 body {
-    background-color: rgb(15, 15, 15) !important;
+    background-color: rgb(28, 28, 28) !important;
 }
 footer{
-    background-color: #212529 !important;
+    background-color: rgb(56, 56, 56) !important;
 }
 nav {
-    background-color: #417dff !important;
+    background-color: #ff8f20 !important;
 }
 main {
     justify-content: center;
     align-items: center;
-    display: flex;
-    height: 100vh;
+    margin-bottom: 10%;
+    /*display: flex;
+    height: 100vh;*/
 }
 .btn {
-    background-color: #417dff !important;
+    background-color: #ff8f20 !important;
+    border-color: #ff8f20 !important;
 }
 .btn-outline-success {
-    border-color: rgb(15, 15, 15) !important;
+    border-color: #ff8f20 !important;
     color: rgb(16, 16, 16) !important;
 }
 .form-control {
-    border-color: rgb(15, 15, 15) !important;
+    border-color: #ff8f20 !important;
     color: rgb(16, 16, 16) !important;
 }
 #TitoloNome {
@@ -37,7 +57,7 @@ main {
     color: rgb(230, 226, 226);
 }
 nav.navbar {
-    box-shadow: 0 3px 3px #417dff;
+    box-shadow: 0 3px 3px #ff8f20;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -45,8 +65,73 @@ nav.navbar {
 #ContactBtn {
     text-align: center;
     border-radius: 10px;
-    background-color: #417dff !important;
+    background-color: #ff8f20 !important;
     border: none;
     width: 150px;
     height: 48px;
+}
+#AboutBtn {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ff8f20 !important;
+    border: none;
+    width: 150px;
+    height: 48px;
+}
+#containerTitleBtn {
+    margin-top: 5%;
+}
+#AboutLink {
+    color: black;
+}
+#ContactLink {
+    color: black;
+}
+#languages {
+    text-align: center;
+    margin-top: 10%;
+}
+#languages img {
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+#languages img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+#languagesH2 {
+    color: rgb(230, 226, 226);
+    margin-bottom: 5%;
+}
+#projectsH2 {
+    color: rgb(230, 226, 226);
+    text-align: center;
+    margin-top: 10%;
+}
+#footerText {
+    margin: 0 auto;
+    color: gray;
+}
+#LinkGitHUB, #LinkInstagram, #LibkTelegram{
+    text-decoration: none !important;
+    color: black !important;
+}
+#imgGitHUB{
+    width: 50px;
+    display: inline-block;
+}
+#imgInstagram{
+    width: 30px;
+    display: inline-block;
+}
+#imgTelegram {
+    width: 35px;
+    display: inline-block;
+}
+#aboutPresentationText {
+    color: rgb(230, 226, 226);
+}
+.card-img-top{
+    width: 100px !important;
+    margin: 5%;
 }
