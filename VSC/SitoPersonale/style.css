@@ -190,3 +190,19 @@ main {
     height: 100%;
     z-index: -1;
 }
+#frameworks {
+    text-align: center;
+    margin-top: 10%;
+}
+#frameworks img {
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+#frameworks img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+#frameworksH2 {
+    color: rgb(228, 172, 5);
+    margin-bottom: 5%;
+}
